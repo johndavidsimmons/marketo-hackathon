@@ -1,0 +1,24 @@
+{
+  "displayName": "Marketo Forms",
+  "name": "marketo-forms",
+  "platform": "web",
+  "version": "1.0.0",
+  "description": "Marketo form events",
+  "author": {
+    "name": "Kevin Haag & John Simmons"
+  },
+  "viewBasePath": "src/view/",
+  "events": [
+    {
+      "displayName": "Form error",
+      "name": "form-error",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/events/formError.js",
+      "viewPath": "events/formError.html"
+    }
+  ]
+}

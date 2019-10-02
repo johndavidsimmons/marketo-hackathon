@@ -19,6 +19,36 @@
       },
       "libPath": "src/lib/events/formError.js",
       "viewPath": "events/formError.html"
+    },
+    {
+      "displayName": "Form Rendered",
+      "name": "form-rendered",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/events/formRendered.js"
+    },
+    {
+      "displayName": "Form Submit Click",
+      "name": "form-submit-click",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/events/formSubmitClick.js"
+    },
+    {
+      "displayName": "Form Submit Success",
+      "name": "form-submit-success",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/events/formSubmitSuccess.js"
     }
   ]
 }

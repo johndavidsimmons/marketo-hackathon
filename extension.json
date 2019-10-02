@@ -10,15 +10,14 @@
   "viewBasePath": "src/view/",
   "events": [
     {
-      "displayName": "Form error",
+      "displayName": "Form Error",
       "name": "form-error",
       "schema": {
         "$schema": "http://json-schema.org/draft-04/schema#",
         "type": "object",
         "properties": {}
       },
-      "libPath": "src/lib/events/formError.js",
-      "viewPath": "events/formError.html"
+      "libPath": "src/lib/events/formError.js"
     },
     {
       "displayName": "Form Rendered",
@@ -50,5 +49,13 @@
       },
       "libPath": "src/lib/events/formSubmitSuccess.js"
     }
-  ]
+  ],
+  "configuration": {
+    "viewPath": "configuration/configuration.html",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {}
+    }
+  }
 }

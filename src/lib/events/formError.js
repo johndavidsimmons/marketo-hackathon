@@ -2,13 +2,12 @@
 
 module.exports = function(settings, trigger) {
   // TODO Start watching for an event. Call trigger when the event occurs.
+  
   if (MktoForms2) {
+    
     MktoForms2.whenReady(function handleReady(form) {
-
-      digitalData.page.pageInfo.mktoFormId = form.getId();
-      digitalData.page.pageInfo.mktoMunchkinId = form.getValues().munchkinId;
-      mrk_form_loaded = true;
-
+      var mrk_form_loaded = true;
+      console.log("still there");  
       form.onValidate(function handleValidate(validateForm) {
         // wait for the error message to appear
         setTimeout(function() {
@@ -24,7 +23,8 @@ module.exports = function(settings, trigger) {
             mktoError = mktoErrorField + ":" + mktoErrorMsg
 
             var mktoError = mktoErrorField + ":" + mktoErrorMsg
-            trigger();
+            trigger;
+            console.log("error occured");
           }
 
 

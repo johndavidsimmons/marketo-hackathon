@@ -1,13 +1,8 @@
 'use strict';
 
 module.exports = function(settings, trigger) {
-  // TODO Start watching for an event. Call trigger when the event occurs.
-  
   if (MktoForms2) {
-    
     MktoForms2.whenReady(function handleReady(form) {
-      var mrk_form_loaded = true;
-      console.log("still there");  
       form.onValidate(function handleValidate(validateForm) {
         // wait for the error message to appear
         setTimeout(function() {
@@ -17,17 +12,14 @@ module.exports = function(settings, trigger) {
           // check for error message
           element = document.querySelector(".mktoErrorMsg");
           if (element) {
-
             var mktoErrorField = document.querySelector(".mktoError").previousSibling.getAttribute('name');
-            mktoErrorMsg = element.textContent || element.innerText;
-            mktoError = mktoErrorField + ":" + mktoErrorMsg
-
+            var mktoErrorMsg = element.textContent || element.innerText;
             var mktoError = mktoErrorField + ":" + mktoErrorMsg
+            //Trigger the Launch event
             trigger;
-            console.log("error occured");
+            //TODO: Capture MKTO error in a data element?
+            console.log(mktoError);
           }
-
-
         }, 50); //timeout
       }); //onvalidate
     }); //whenready

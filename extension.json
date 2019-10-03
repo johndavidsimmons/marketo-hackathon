@@ -2,7 +2,7 @@
   "displayName": "Marketo Forms",
   "name": "marketo-forms",
   "platform": "web",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Marketo form events",
   "author": {
     "name": "Kevin Haag & John Simmons"

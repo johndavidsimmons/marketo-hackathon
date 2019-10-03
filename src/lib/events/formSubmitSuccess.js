@@ -6,7 +6,7 @@ module.exports = function(settings, trigger) {
     MktoForms2.whenReady(function handleReady (form) { 
       form.onSuccess(function handleSuccess (values) {
         console.log("submitSuccess"); 
-        trigger; 
+        trigger(); 
       })
     })
   } 

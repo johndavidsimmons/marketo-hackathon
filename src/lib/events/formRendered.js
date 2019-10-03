@@ -12,7 +12,7 @@ module.exports = function(settings, trigger) {
         mktoFormId = form.getId();
         mktoMunchkinId = form.getValues().munchkinId;
         mrk_form_loaded=true;
-        trigger;
+        trigger();
       });
   }
 };

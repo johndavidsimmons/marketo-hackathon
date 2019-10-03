@@ -8,7 +8,7 @@ module.exports = function(settings, trigger) {
         // Optimize to only include the current form going forward
         button.addEventListener("click", function(event){
           //event.preventDefault();
-          trigger; 
+          trigger(); 
           console.log("submitClick"); 
         });
     }); 

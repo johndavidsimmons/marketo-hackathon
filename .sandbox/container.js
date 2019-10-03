@@ -1,33 +1,12 @@
 module.exports = {
   "dataElements": {},
   "rules": [{
-    "id": "RL1570126703649",
-    "name": " form render rule",
+    "id": "RL1570141964511",
+    "name": "form errors",
     "events": [{
-      "modulePath": "marketo-forms/src/lib/events/formRendered.js",
+      "modulePath": "marketo-form-tracking/src/lib/events/formError.js",
       "settings": {}
     }]
-  }, {
-    "id": "RL1570126759648",
-    "name": "form error rule",
-    "events": [{
-      "modulePath": "marketo-forms/src/lib/events/formError.js",
-      "settings": {}
-    }]
-  }, {
-    "id": "RL1570127358504",
-    "name": "form submit",
-    "events": [{
-      "modulePath": "marketo-forms/src/lib/events/formSubmitClick.js",
-      "settings": {}
-    }]
-  }, {
-    "id": "RL1570135113097",
-    "events": [{
-      "modulePath": "marketo-forms/src/lib/events/formSubmitSuccess.js",
-      "settings": {}
-    }],
-    "name": "form submit success"
   }],
   "extensions": {},
   "property": {
@@ -40,8 +19,8 @@ module.exports = {
   },
   "buildInfo": {
     "turbineVersion": "25.6.0",
-    "turbineBuildDate": "2019-10-03T20:38:38.082Z",
-    "buildDate": "2019-10-03T20:38:38.082Z",
+    "turbineBuildDate": "2019-10-03T22:32:45.773Z",
+    "buildDate": "2019-10-03T22:32:45.773Z",
     "environment": "development"
   }
 }

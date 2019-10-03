@@ -17,7 +17,7 @@ module.exports = function(settings, trigger) {
             var mktoErrorMsg = element.textContent || element.innerText;
             var mktoError = mktoErrorField + ":" + mktoErrorMsg
             //Trigger the Launch event
-            trigger;
+            trigger();
             //TODO: Capture MKTO error in a data element?
             console.log(mktoError);
           }

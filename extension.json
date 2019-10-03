@@ -1,9 +1,9 @@
 {
-  "displayName": "Marketo Forms",
-  "name": "marketo-forms",
+  "displayName": "Marketo Form Tracking",
+  "name": "marketo-form-tracking",
   "platform": "web",
-  "version": "1.0.1",
-  "description": "Marketo form events",
+  "version": "1.0.2",
+  "description": "Marketo Form Tracking",
   "author": {
     "name": "Kevin Haag & John Simmons"
   },
@@ -50,13 +50,5 @@
       "libPath": "src/lib/events/formSubmitSuccess.js"
     }
   ],
-  "configuration": {
-    "viewPath": "configuration/configuration.html",
-    "schema": {
-      "$schema": "http://json-schema.org/draft-04/schema#",
-      "type": "object",
-      "properties": {}
-    }
-  },
   "iconPath": "resources/icons/bounteous.svg"
 }

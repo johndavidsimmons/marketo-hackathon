@@ -57,5 +57,6 @@
       "type": "object",
       "properties": {}
     }
-  }
+  },
+  "iconPath": "resources/icons/bounteous.svg"
 }

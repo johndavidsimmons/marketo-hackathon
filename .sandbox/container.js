@@ -21,6 +21,13 @@ module.exports = {
       "modulePath": "marketo-forms/src/lib/events/formSubmitClick.js",
       "settings": {}
     }]
+  }, {
+    "id": "RL1570135113097",
+    "events": [{
+      "modulePath": "marketo-forms/src/lib/events/formSubmitSuccess.js",
+      "settings": {}
+    }],
+    "name": "form submit success"
   }],
   "extensions": {},
   "property": {
@@ -33,8 +40,8 @@ module.exports = {
   },
   "buildInfo": {
     "turbineVersion": "25.6.0",
-    "turbineBuildDate": "2019-10-03T18:29:22.680Z",
-    "buildDate": "2019-10-03T18:29:22.680Z",
+    "turbineBuildDate": "2019-10-03T20:38:38.082Z",
+    "buildDate": "2019-10-03T20:38:38.082Z",
     "environment": "development"
   }
 }

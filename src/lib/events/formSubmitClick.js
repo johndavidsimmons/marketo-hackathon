@@ -9,7 +9,7 @@ module.exports = function(settings, trigger) {
         button.addEventListener("click", function(event){
           //event.preventDefault();
           trigger; 
-          console.log("submit"); 
+          console.log("submitClick"); 
         });
     }); 
   };
